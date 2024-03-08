@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (featuredItem)="navigateTo($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes></app-recipes>
-      <app-shopping-list></app-shopping-list>
+      <app-recipes *ngIf="isNavigate === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="isNavigate !== 'recipe'"></app-shopping-list>
     </div>
   </div>
 </div>
