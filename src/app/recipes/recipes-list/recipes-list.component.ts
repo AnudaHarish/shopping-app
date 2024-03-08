@@ -9,7 +9,7 @@ import { Recipe } from '../recipe.model';
 export class RecipesListComponent implements OnInit {
   @Output() itemSelected = new EventEmitter<Recipe>()
   recipe: Recipe[] = [new Recipe('chicken curry', 'sample food item description', './assets/curry.jpeg'),
-  new Recipe('chicken curry', 'sample food item description', './assets/curry.jpeg')]
+    new Recipe('chicken curry2', 'sample food item description2', './assets/curry.jpeg')]
   constructor() { }
 
   ngOnInit(): void {
