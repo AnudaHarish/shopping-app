@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Recipe } from '../recipe.model';
 
 @Component({
@@ -7,7 +7,9 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipes-list.component.css']
 })
 export class RecipesListComponent implements OnInit {
-  recipe: Recipe[] = [new Recipe('chicken curry', 'sample food item description', './assets/curry.jpeg')]
+
+  recipe: Recipe[] = [new Recipe('chicken curry', 'sample food item description', './assets/curry.jpeg'),
+  new Recipe('chicken curry', 'sample food item description', './assets/curry.jpeg')]
   constructor() { }
 
   ngOnInit(): void {
